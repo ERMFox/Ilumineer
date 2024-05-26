@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "tutomod:ruby_block",
+    "tutomod:raw_ruby_block",
+    "tutomod:ruby_ore",
+    "tutomod:nether_ruby_ore",
+    "tutomod:deepslate_ruby_ore",
+    "tutomod:end_stone_ruby_ore"
+  ]
+}
