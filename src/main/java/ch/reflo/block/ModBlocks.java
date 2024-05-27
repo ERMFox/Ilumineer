@@ -1,6 +1,8 @@
 package ch.reflo.block;
 
 import ch.reflo.Illumineer;
+import ch.reflo.block.custom.BridgeControllerBlock;
+import ch.reflo.block.custom.HardlightBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -12,7 +14,8 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block HARDIGHT_BLOCK = registerBlock("hardlight_block", new Block(AbstractBlock.Settings.copy(Blocks.GLOWSTONE).luminance(value -> 20).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block HARDLIGHT_BLOCK = registerBlock("hardlight_block", new HardlightBlock(AbstractBlock.Settings.copy(Blocks.GLOWSTONE)));
+    public static final Block BRIDGECONTROLLER_BLOCK = registerBlock("bridgecontroller_block", new BridgeControllerBlock(AbstractBlock.Settings.copy(Blocks.GLOWSTONE)));
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(Illumineer.MOD_ID, name), block);
