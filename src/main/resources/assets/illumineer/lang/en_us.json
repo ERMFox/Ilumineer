@@ -1,6 +1,7 @@
 {
   "item.illumineer.hardlight_in_a_jar": "Hardlight in a Jar",
   "block.illumineer.hardlight_block": "Block of Hardlight",
+  "block.illumineer.bridgecontroller_block": "Hardlight Bridge Controller",
 
   "itemgroup_illumineer": "Illumineer"
 }

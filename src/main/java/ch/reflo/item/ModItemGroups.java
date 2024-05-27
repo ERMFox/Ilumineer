@@ -22,7 +22,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup_illumineer"))
                     .icon(() -> new ItemStack(ModItems.HARDLIGHT_IN_A_JAR)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HARDLIGHT_IN_A_JAR);
-                        entries.add(ModBlocks.HARDIGHT_BLOCK);
+                        entries.add(ModBlocks.HARDLIGHT_BLOCK);
+                        entries.add(ModBlocks.BRIDGECONTROLLER_BLOCK);
 
                         //more entries added here
                     }).build());
