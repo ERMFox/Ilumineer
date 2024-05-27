@@ -2,6 +2,7 @@ package ch.reflo.item;
 // Imports
 
 import ch.reflo.Illumineer;
+import ch.reflo.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -21,7 +22,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup_illumineer"))
                     .icon(() -> new ItemStack(ModItems.HARDLIGHT_IN_A_JAR)).entries((displayContext, entries) -> {
                         entries.add(ModItems.HARDLIGHT_IN_A_JAR);
-                        entries.add(Items.DIAMOND);
+                        entries.add(ModBlocks.HARDIGHT_BLOCK);
 
                         //more entries added here
                     }).build());

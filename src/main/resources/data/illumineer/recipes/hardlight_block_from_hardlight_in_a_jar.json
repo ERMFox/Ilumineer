@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "illumineer:hardlight_in_a_jar"
+    },
+    {
+      "item": "illumineer:hardlight_in_a_jar"
+    },
+    {
+      "item": "illumineer:hardlight_in_a_jar"
+    },
+    {
+      "item": "illumineer:hardlight_in_a_jar"
+    }
+  ],
+  "result": {
+    "id": "illumineer:hardlight_block",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "illumineer:block/hardlight_block"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package ch.reflo;
 
+import ch.reflo.block.ModBlocks;
 import ch.reflo.item.ModItemGroups;
 import ch.reflo.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -14,6 +15,7 @@ public class Illumineer implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 		LOGGER.info("Hello Fabric world!");
 
