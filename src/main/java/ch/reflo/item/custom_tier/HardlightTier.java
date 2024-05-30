@@ -1,35 +1,44 @@
 package ch.reflo.item.custom_tier;
 
 
-public class HardlightTier /*implements Tier*/ {/*
+import ch.reflo.Illumineer;
+import ch.reflo.item.ModItems;
+import net.minecraft.block.Block;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.TagKey;
+
+public class HardlightTier implements ToolMaterial {
+
+
     @Override
-    public int getUses() {
-        return 1561;  // Durability - similar to diamond
+    public int getDurability() {
+        return 1300;
     }
 
     @Override
-    public float getSpeed() {
-        return 8.0F;  // Mining speed - similar to diamond
+    public float getMiningSpeedMultiplier() {
+        return 7.5f;
     }
 
     @Override
-    public float getAttackDamageBonus() {
-        return 3.0F;  // Attack damage bonus
+    public float getAttackDamage() {
+        return 4.0f;
     }
 
     @Override
-    public int getLevel() {
-        return 3;  // Mining level - similar to diamond
+    public TagKey<Block> getInverseTag() {
+        return null;
     }
 
     @Override
-    public int getEnchantmentValue() {
-        return 10;  // Enchantability
+    public int getEnchantability() {
+        return 35;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
         // Define the repair material for this tier
-        return Ingredient.ofItems(Items.SOME_ITEM);  // Placeholder
-    }*/
+        return Ingredient.ofItems(ModItems.HARDLIGHT_IN_A_JAR);  // Placeholder
+    }
 }
