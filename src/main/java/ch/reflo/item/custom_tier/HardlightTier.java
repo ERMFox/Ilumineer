@@ -9,6 +9,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
 
 public class HardlightTier implements ToolMaterial {
+    public static final HardlightTier INSTANCE = new HardlightTier();
 
 
     @Override
@@ -23,7 +24,7 @@ public class HardlightTier implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 4.0f;
+        return 7.0f;
     }
 
     @Override
