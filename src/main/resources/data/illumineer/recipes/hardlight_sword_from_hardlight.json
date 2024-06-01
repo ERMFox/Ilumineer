@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " # ",
+    " # ",
+    " * "
+  ],
+  "key": {
+    "#": {
+      "item": "illumineer:hardlight_in_a_jar"
+    },
+    "*":{
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "illumineer:hardlight_sword",
+    "count": 1
+  }
+}

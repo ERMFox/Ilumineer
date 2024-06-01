@@ -10,7 +10,7 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    HARDLIGHTOOL_MATERIAL(MiningLevels.NETHERITE, 7.5f, 9, 30,
+    HARDLIGHTOOL_MATERIAL(1300, 7.5f, 9, 30,
             () ->Ingredient.ofItems(ModItems.HARDLIGHT_IN_A_JAR));
 
     private final int durability;
