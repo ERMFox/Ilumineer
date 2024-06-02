@@ -2,15 +2,18 @@ package ch.reflo.item;
 
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.component.type.ToolComponent;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
-    HARDLIGHTOOL_MATERIAL(1300, 7.5f, 9, 30,
+    HARDLIGHTOOL_MATERIAL(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,1300, 12.0f, 9, 30,
             () ->Ingredient.ofItems(ModItems.HARDLIGHT_IN_A_JAR));
 
     private final int durability;
@@ -18,8 +21,10 @@ public enum ModToolMaterial implements ToolMaterial {
     private final float attackDamage;
     private final int enchantability;
     private final Supplier<Ingredient> repaitIngredient;
+    private final TagKey<Block> inverseTag;
 
-    ModToolMaterial(int durability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repaitIngredient) {
+    ModToolMaterial(TagKey<Block> inverseTag, int durability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repaitIngredient) {
+        this.inverseTag = inverseTag;
         this.durability = durability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
@@ -56,7 +61,7 @@ public enum ModToolMaterial implements ToolMaterial {
      */
     @Override
     public TagKey<Block> getInverseTag() {
-        return null;
+        return this.inverseTag;
     }
 
     /**
@@ -83,4 +88,5 @@ public enum ModToolMaterial implements ToolMaterial {
     public ToolComponent createComponent(TagKey<Block> tag) {
         return ToolMaterial.super.createComponent(tag);
     }
+
 }

@@ -25,6 +25,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.HARDLIGHT_BLOCK);
                         entries.add(ModBlocks.BRIDGECONTROLLER_BLOCK);
                         entries.add(ModItems.HARDLIGHT_SWORD);
+                        entries.add(ModItems.HARDLIGHT_PICKAXE);
+                        entries.add(ModItems.HARDLIGHT_AXE);
 
                         //more entries added here
                     }).build());

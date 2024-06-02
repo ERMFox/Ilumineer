@@ -4,14 +4,12 @@ package ch.reflo.item.custom;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.item.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class HardlightSwordItem extends SwordItem {
-    public HardlightSwordItem(ToolMaterial toolMaterial, Settings settings) {
+public class HardlightAxeItem extends AxeItem {
+    public HardlightAxeItem(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
 

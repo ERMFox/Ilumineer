@@ -1,6 +1,12 @@
 {
   "item.illumineer.hardlight_in_a_jar": "Hardlight in a Jar",
   "item.illumineer.hardlight_sword": "Hardlight Sword",
+
+  "item.illumineer.hardlight_axe": "Hardlight Axe",
+  "item.illumineer.hardlight_hoe": "Hardlight Hoe",
+  "item.illumineer.hardlight_pickaxe": "Hardlight Pickaxe",
+  "item.illumineer.hardlight_shovel": "Hardlight shovel",
+
   "block.illumineer.hardlight_block": "Block of Hardlight",
   "block.illumineer.bridgecontroller_block": "Hardlight Bridge Controller",
 
