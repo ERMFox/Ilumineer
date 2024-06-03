@@ -29,6 +29,8 @@ public class ModItems {
     //public static final ToolItem W = registerToolItem("w", new AxeItem(ModToolMaterial.HARDLIGHTOOL_MATERIAL, new Item.Settings()));
     public static final Item HARDLIGHT_AXE = registerItem("hardlight_axe", (Item)new AxeItem(ModToolMaterial.HARDLIGHTOOL_MATERIAL, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.HARDLIGHTOOL_MATERIAL, 8.0f, -3.2f))));
     public static final Item HARDLIGHT_PICKAXE = registerItem("hardlight_pickaxe", (Item)new PickaxeItem(ModToolMaterial.HARDLIGHTOOL_MATERIAL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterial.HARDLIGHTOOL_MATERIAL, 8.0f, -2.8f))));
+    public static final Item HARDLIGHT_SHOVEL = registerItem("hardlight_shovel", (Item)new ShovelItem(ModToolMaterial.HARDLIGHTOOL_MATERIAL, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.HARDLIGHTOOL_MATERIAL, 8f, -3.0f))));
+    public static final Item HARDLIGHT_HOE = registerItem("hardlight_hoe", (Item)new HoeItem(ModToolMaterial.HARDLIGHTOOL_MATERIAL, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.HARDLIGHTOOL_MATERIAL, 8f, -3.0f))));
 
     /*
     public static final Item WOODEN_SWORD = Items.register("wooden_sword", (Item)new SwordItem(ToolMaterials.WOOD, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.WOOD, 3, -2.4f))));
@@ -49,6 +51,9 @@ public class ModItems {
     private static void addItemstoToolItemGroup(FabricItemGroupEntries entries){
         entries.add(HARDLIGHT_AXE);
         entries.add(HARDLIGHT_PICKAXE);
+        entries.add(HARDLIGHT_SHOVEL);
+        entries.add(HARDLIGHT_HOE);
+
     }
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, new Identifier(Illumineer.MOD_ID, name), item);

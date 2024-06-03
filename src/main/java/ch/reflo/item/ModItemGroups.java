@@ -27,6 +27,9 @@ public class ModItemGroups {
                         entries.add(ModItems.HARDLIGHT_SWORD);
                         entries.add(ModItems.HARDLIGHT_PICKAXE);
                         entries.add(ModItems.HARDLIGHT_AXE);
+                        entries.add(ModItems.HARDLIGHT_SHOVEL);
+                        entries.add(ModItems.HARDLIGHT_HOE);
+
 
                         //more entries added here
                     }).build());
